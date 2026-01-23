@@ -2,3 +2,4 @@
 *.XPT
 *.parquet
 Dataset/
+.streamlit/secrets.toml
