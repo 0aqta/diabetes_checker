@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diabetes Risk Checker - Kitchener-Waterloo</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Diabetes Risk Checker</div>
+      <button class="theme-toggle" id="themeBtn" aria-label="Toggle dark/light mode">🌙</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Know Your Diabetes Risk<br>in Minutes</h1>
+        <p class="subtitle">
+          Simple • Private • AI-Powered<br>
+          Created with care in Kitchener-Waterloo, Ontario
+        </p>
+        <a href="http://localhost:8501" class="btn-primary" id="appLink">
+          Start Your Risk Assessment →
+        </a>
+      </section>
+
+      <section class="info-grid">
+        <div class="card warning">
+          <h3>Important Notice</h3>
+          <p>
+            This tool is for <strong>educational purposes only</strong>.<br><br>
+            <strong>It is NOT a medical diagnosis.</strong><br>
+            Always consult your family doctor or a certified diabetes educator.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>How It Works</h3>
+          <ul>
+            <li>Answer simple health questions</li>
+            <li>Advanced XGBoost model estimates risk</li>
+            <li>Get personalized advice powered by Google Gemini AI</li>
+            <li>All data stays private in your session</li>
+          </ul>
+        </div>
+
+        <div class="card support">
+          <h3>Local Support – Kitchener-Waterloo</h3>
+          <ul>
+            <li>Diabetes Education Program – Grand River / St. Mary's Hospitals</li>
+            <li>Community Healthcaring Kitchener-Waterloo</li>
+            <li>Diabetes Canada virtual classes & support</li>
+            <li>Call: <strong>1-800-226-8464</strong></li>
+            <li><a href="https://www.diabetes.ca" target="_blank">diabetes.ca</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Built with ❤️ in Kitchener-Waterloo, Ontario • January 2026<br>
+      Data: CDC BRFSS • Model: XGBoost • AI: Google Gemini<br><br>
+      <small>Always seek professional medical advice for your health.</small>
+    </footer>
+  </div>
+
+  <script>
+    const themeBtn = document.getElementById('themeBtn');
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      body.setAttribute('data-theme', 'dark');
+      themeBtn.textContent = '☀️';
+    } else {
+      themeBtn.textContent = '🌙';
+    }
+
+    themeBtn.addEventListener('click', () => {
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.removeAttribute('data-theme');
+        themeBtn.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        themeBtn.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>
