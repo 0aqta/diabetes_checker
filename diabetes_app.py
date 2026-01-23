@@ -152,7 +152,7 @@ with col3:
 
     # INCOME
     income_options = [
-        "<$15,000", "$15,000–<$25,000", "$25,000–<$35,000", "$35,000–<$50,000", "$50,000+git"
+        "<$15,000", "$15,000–<$25,000", "$25,000–<$35,000", "$35,000–<$50,000", "$50,000+"
     ]
     income_label = st.selectbox("Income category", income_options, index=4)
     income = income_options.index(income_label) + 1
