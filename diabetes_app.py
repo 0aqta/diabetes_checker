@@ -59,7 +59,7 @@ with col1:
     # SEXVAR
     sex_label = st.selectbox(
         "Sex",
-        options=["Male", "Female"],
+        options=["Male (1)", "Female (2)"],
         index=1
     )
     sex = 1.0 if "Male" in sex_label else 2.0
@@ -67,10 +67,10 @@ with col1:
     # GENHLTH
     genhlth_label = st.selectbox(
         "How would you rate your general health?",
-        options=["Excellent ", "Very good ", "Good ", "Fair ", "Poor "],
+        options=["Excellent (1)", "Very good (2)", "Good (3)", "Fair (4)", "Poor (5)"],
         index=2
     )
-    genhlth_map = {"Excellent ":1, "Very good ":2, "Good ":3, "Fair ":4, "Poor ":5}
+    genhlth_map = {"Excellent (1)":1, "Very good (2)":2, "Good (3)":3, "Fair (4)":4, "Poor (5)":5}
     genhlth = genhlth_map[genhlth_label]
 
     # PHYSHLTH
@@ -85,7 +85,7 @@ with col2:
     # CVDSTRK3
     cvdstrk3_label = st.selectbox(
         "Ever told by a doctor that you had a stroke?",
-        options=["Yes ", "No "],
+        options=["Yes (1)", "No (2)"],
         index=1
     )
     cvdstrk3 = 1.0 if "Yes" in cvdstrk3_label else 2.0
@@ -93,15 +93,15 @@ with col2:
     # _RFHLTH
     rfhlth_label = st.selectbox(
         "Do you get enough fruits and vegetables?",
-        options=["Yes", "No"],
+        options=["Good or Better Health (1)", "Fair or Poor Health (2)"],
         index=0
     )
-    rfhlth = 1.0 if "Yes" in rfhlth_label else 2.0
+    rfhlth = 1.0 if "(1)" in rfhlth_label else 2.0
 
     # _TOTINDA
     totinda_label = st.selectbox(
         "Did you do any physical activity or exercise in the past month?",
-        options=["Yes ", "No "],
+        options=["Yes (1)", "No (2)"],
         index=0
     )
     totinda = 1.0 if "Yes" in totinda_label else 2.0
@@ -109,7 +109,7 @@ with col2:
     # _MICHD
     michd_label = st.selectbox(
         "Ever told you had coronary heart disease or heart attack?",
-        options=["Yes", "No"],
+        options=["Yes (1)", "No (2)"],
         index=1
     )
     michd = 1.0 if "Yes" in michd_label else 2.0
@@ -117,18 +117,18 @@ with col2:
 with col3:
     # _RACE
     race_options = [
-        "White only, non-Hispanic ", "Black only, non-Hispanic ",
-        "American Indian/Alaskan Native only ", "Asian only ",
-        "Native Hawaiian/Other Pacific Islander only ", "Other race only ",
-        "Multiracial, non-Hispanic ", "Hispanic "
+        "White only, non-Hispanic (1)", "Black only, non-Hispanic (2)",
+        "American Indian/Alaskan Native only (3)", "Asian only (4)",
+        "Native Hawaiian/Other Pacific Islander only (5)", "Other race only (6)",
+        "Multiracial, non-Hispanic (7)", "Hispanic (8)"
     ]
     race_label = st.selectbox("Race / Ethnicity", race_options, index=0)
     race = race_options.index(race_label) + 1
 
     # _AGEG5YR
     age_options = [
-        "18–24 ", "25–29 ", "30–34 ", "35–39 ", "40–44 ", "45–49 ",
-        "50–54 ", "55–59 ", "60–64 ", "65–69 ", "70–74 ", "75–79 ", "80+ "
+        "18–24 (1)", "25–29 (2)", "30–34 (3)", "35–39 (4)", "40–44 (5)", "45–49 (6)",
+        "50–54 (7)", "55–59 (8)", "60–64 (9)", "65–69 (10)", "70–74 (11)", "75–79 (12)", "80+ (13)"
     ]
     age_label = st.selectbox("Your age group", age_options, index=7)
     agegrp = age_options.index(age_label) + 1
@@ -139,20 +139,20 @@ with col3:
 
     # _EDUCAG
     educ_options = [
-        "Did not graduate high school", "Graduated high school",
-        "Attended college/technical school", "Graduated college/technical school"
+        "Did not graduate high school (1)", "Graduated high school (2)",
+        "Attended college/technical school (3)", "Graduated college/technical school (4)"
     ]
     educ_label = st.selectbox("Highest level of education", educ_options, index=2)
     education = educ_options.index(educ_label) + 1
 
     # _SMOKER3
-    smoker_options = ["Current – every day", "Current – some days", "Former smoker", "Never smoked"]
+    smoker_options = ["Current – every day (1)", "Current – some days (2)", "Former smoker (3)", "Never smoked (4)"]
     smoker_label = st.selectbox("Smoking status", smoker_options, index=3)
     smoker = smoker_options.index(smoker_label) + 1
 
     # INCOME
     income_options = [
-        "<$15,000", "$15,000–<$25,000", "$25,000–<$35,000 ", "$35,000–<$50,000 ", "$50,000+ "
+        "<$15,000 (1)", "$15,000–<$25,000 (2)", "$25,000–<$35,000 (3)", "$35,000–<$50,000 (4)", "$50,000+ (5)"
     ]
     income_label = st.selectbox("Income category", income_options, index=4)
     income = income_options.index(income_label) + 1
@@ -237,4 +237,4 @@ End with strong disclaimer:
 
 # ── FOOTER ────────────────────────────────────────────────────────────────
 st.markdown("---")
-st.caption("Educational awareness tool • Built in GTA • Model: XGBoost • AI: Google Gemini")
+st.caption("Educational awareness tool • For all of Canada • Model: XGBoost • AI: Google Gemini")
