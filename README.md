@@ -34,7 +34,7 @@
   2 million records from BRFSS (Behavioral Risk Factor Surveillance System) 2020–2024
   
 - **Data Processing**  
-  Merged BRFSS survey data (2020–2024) using **Google BigQuery** (SQL queries) + stored/accessed via **Google Cloud Storage buckets**
+  Merged BRFSS survey data (2020–2024) using **Google BigQuery** (Notebook) + stored/accessed via **Google Cloud Storage buckets**
 
 - **Machine Learning**  
   XGBoost classifier trained locally, saved as pickle (`xgboost_diabetes_model.pkl`)
